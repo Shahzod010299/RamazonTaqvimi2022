@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Taqvim 2022</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="duo_saharlik">
+        Navaytu an asuvma sovma shahri ramazona
+        minal fajri ilal mag\‘ribi, xolisan lillahi ta\’aalaa Allohu akbar!.
+    </string>
+    <string name="duo_saharlik_manosi">
+          Ma\’nosi: Ramazon oyining ro\‘zasini subhdan
+          to kun botguncha tutmoqni niyat qildim. Xolis Alloh uchun Alloh buyukdir.
+    </string>
+    <string name="duo_iftorlik">
+        Allohumma laka sumtu va bika aamantu va a\’layka tavakkaltu
+        va a\’laa rizqika aftartu, fag\‘firliy ma qoddamtu va maa axxortu birohmatika yaa arhamar roohimiyn.
+    </string>
+    <string name="duo_iftorlik_manosi">
+        Ma\’nosi: Ey Alloh, ushbu Ro\‘zamni Sen uchun tutdim va Senga iymon keltirdim va
+        Senga tavakkal qildim va bergan rizqing bilan iftor qildim.
+        Ey mehribonlarning eng mehriboni, mening avvalgi va keyingi gunohlarimni mag\‘firat qilgil.
+    </string>
+
+
+</resources>

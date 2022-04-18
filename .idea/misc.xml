@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bg_card.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_card_2.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_card_3.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_country.xml" value="0.266304347826087" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18009118541033434" />
+        <entry key="app/src/main/res/layout/activity_start.xml" value="0.19114583333333332" />
+        <entry key="app/src/main/res/layout/custom_dialog_time.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/fragment_colendar.xml" value="0.266304347826087" />
+        <entry key="app/src/main/res/layout/fragment_country.xml" value="0.3134057971014493" />
+        <entry key="app/src/main/res/layout/fragment_dialog_timer.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_dialog_timer2.xml" value="0.18009118541033434" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.3134057971014493" />
+        <entry key="app/src/main/res/layout/fragment_start.xml" value="0.3703125" />
+        <entry key="app/src/main/res/layout/item_calendar.xml" value="0.266304347826087" />
+        <entry key="app/src/main/res/layout/item_dialog.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

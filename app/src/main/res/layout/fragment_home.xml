@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:orientation="vertical"
+    tools:context=".ui.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_sana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/ofont"
+        android:text="Aprel 4 / Ramazon 2"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/cr"
+        android:text="2022 - yill/1443 - yil"
+        android:textColor="#80FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/ofont"
+        android:gravity="center"
+        android:text="Toshkent Shahri"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardCornerRadius="12dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_eslatma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ofont"
+                        android:gravity="center"
+                        android:text="Eslatma(Vaqtlar farqi)"
+                        android:textColor="@color/app_color"
+                        android:textSize="24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/switch_eslatma"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/timerr"
+                        android:foreground="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_eslatma"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="2dp"
+                        android:background="#1A000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_eslatma" />
+
+                    <ImageView
+                        android:id="@+id/image_saxarlik"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="12dp"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_icon_saxarlik"
+                        app:layout_constraintBottom_toTopOf="@id/image_iftorlik"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/view" />
+
+                    <TextView
+                        android:id="@+id/tv_saxarlik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/ofont"
+                        android:text="Saharlik"
+                        android:textColor="#801BA881"
+                        android:textSize="24dp"
+                        app:layout_constraintBottom_toTopOf="@id/tv_saxarlik_time"
+                        app:layout_constraintStart_toEndOf="@id/image_saxarlik"
+                        app:layout_constraintTop_toTopOf="@id/image_saxarlik" />
+
+                    <TextView
+                        android:id="@+id/tv_saxarlik_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/ofont"
+                        android:text="04:45"
+                        android:textColor="@color/app_color"
+                        android:textSize="24dp"
+                        app:layout_constraintBottom_toBottomOf="@id/image_saxarlik"
+                        app:layout_constraintStart_toStartOf="@id/tv_saxarlik"
+                        app:layout_constraintTop_toBottomOf="@id/tv_saxarlik" />
+
+
+                    <ImageView
+                        android:id="@+id/image_iftorlik"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="12dp"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_icon_iftorlik"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/image_saxarlik" />
+
+                    <TextView
+                        android:id="@+id/tv_iftorlik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/ofont"
+                        android:text="Iftorlik"
+                        android:textColor="#801BA881"
+                        android:textSize="24dp"
+                        app:layout_constraintBottom_toTopOf="@id/tv_iftrolik_time"
+                        app:layout_constraintStart_toEndOf="@id/image_iftorlik"
+                        app:layout_constraintTop_toTopOf="@id/image_iftorlik" />
+
+                    <TextView
+                        android:id="@+id/tv_iftrolik_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/ofont"
+                        android:text="17:09"
+                        android:textColor="@color/app_color"
+                        android:textSize="24dp"
+                        app:layout_constraintBottom_toBottomOf="@id/image_iftorlik"
+                        app:layout_constraintStart_toStartOf="@id/tv_iftorlik"
+                        app:layout_constraintTop_toBottomOf="@id/tv_iftorlik" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_saharlik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardCornerRadius="12dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/ofont"
+                            android:text="Saharlik (og\‘iz yopish) duosi"
+                            android:textColor="@color/app_color"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:id="@+id/img_saharlik_sound"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_volume" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_saharlik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/cr"
+                        android:justificationMode="inter_word"
+                        android:text="@string/duo_saharlik"
+                        android:textColor="@color/app_color"
+                        android:textSize="18dp" />
+
+
+                    <View
+                        android:id="@+id/view_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="5dp"
+                        android:background="#1A000000" />
+
+
+                    <TextView
+                        android:id="@+id/tv_saharlik_manosi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cr"
+                        android:justificationMode="inter_word"
+                        android:text="@string/duo_saharlik_manosi"
+                        android:textColor="@color/app_color"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_iftorlik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/ofont"
+                            android:text="Iftorlik (og\‘iz ochish) duosi"
+                            android:textColor="@color/app_color"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:id="@+id/img_iftorlik_sound"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_volume" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtv_iftorlik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/cr"
+                        android:justificationMode="inter_word"
+                        android:text="@string/duo_iftorlik"
+                        android:textColor="@color/app_color"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="5dp"
+                        android:background="#1A000000" />
+
+                    <TextView
+                        android:id="@+id/tv_iftorlik_manosi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cr"
+                        android:justificationMode="inter_word"
+                        android:text="@string/duo_iftorlik_manosi"
+                        android:textColor="@color/app_color"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_icon_home"
+        android:orderInCategory="2"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/colendarFragment"
+        android:icon="@drawable/ic_icon_calendar"
+        android:orderInCategory="1"
+        android:title="Calendar" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/logo_dk"
+        android:orderInCategory="3"
+        android:title="Info" />
+
+</menu>
